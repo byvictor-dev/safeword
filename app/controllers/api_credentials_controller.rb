@@ -3,6 +3,7 @@ class ApiCredentialsController < ApplicationController
   before_action :authenticate_user!
 
   def index
+    @api_token = current_user.api_token
   end
 
   def update
