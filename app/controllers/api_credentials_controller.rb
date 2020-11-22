@@ -4,7 +4,6 @@ class ApiCredentialsController < ApplicationController
 
   def index
     @api_token = current_user.api_token
-    @base_uri = ENV['BASE_URI']
   end
 
   def update
