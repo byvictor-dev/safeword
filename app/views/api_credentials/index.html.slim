@@ -1,0 +1,10 @@
+.container.mx-auto
+  .max-w-5xl.mx-auto.py-6.sm:px-6.lg:px-8
+    .mt-3.grid.gap-5.grid-cols-3
+      .api-credentials.col-span-1.flex.shadow-sm.rounded-m
+        .grid.grid-cols-5
+          .title.col-span-2.font-medium API Token:
+          .text.col-span-3.font-small = current_user.api_token
+
+      .api-snippet.col-span-2.flex.shadow-sm.rounded-m
+        span.stuff Snippet block here
